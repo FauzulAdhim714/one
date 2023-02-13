@@ -1,0 +1,52 @@
+GET http://localhost:5000/users
+###
+GET http://localhost:5000/users/1
+###
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Malik",
+    "alamat" : "Ciawi",
+    "kelas" : "1-A"
+}
+###
+PATCH   http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name" : "Fauzan",
+    "alamat" : "Ciawi",
+    "kelas" : "1-C"
+}
+###
+DELETE    http://localhost:5000/users/7
+###
+DELETE    http://localhost:5000/kelas/7
+###
+GET http://localhost:5000/kelas
+###
+GET http://localhost:5000/kelas/2
+###
+POST  http://localhost:5000/kelas
+Content-Type: application/json
+
+{
+    "name": "Aan",
+    "alamat": "Ciawi",
+    "indonesia": "11",
+    "inggris": "11",
+    "matematika": "11",
+    "ipa": "11",
+    "ips": "11",
+    "olahraga": "11",
+    "sunda": "11",
+    "kesenian": "11",
+    "extra": "11",
+    "kelas": "11",
+    "kelasId": 11
+}
+###
+GET http://localhost:5000/kelasId/11
+###
+
